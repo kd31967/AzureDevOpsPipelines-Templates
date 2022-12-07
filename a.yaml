@@ -3,7 +3,7 @@
 variables: # Global variables
   - template: package-release-with-params.yml # Template reference
     parameters:
-      DIRECTORY1: "azure/checker"
+      DIRECTORY: "azure/checker"
       
 
 pool:
