@@ -3,8 +3,8 @@
 variables: # Global variables
   - template: package-release-with-params.yml # Template reference
     parameters:
-      DIRECTORY: "azure/checker"
-      ABC:"DEVENDRA"
+      DIRECTORY1: "azure/checker"
+      
 
 pool:
   name: 'Default'
