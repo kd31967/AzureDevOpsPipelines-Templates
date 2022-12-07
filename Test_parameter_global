@@ -1,0 +1,21 @@
+# File: azure-pipelines.yml
+
+variables: # Global variables
+  - template: package-release-with-params.yml # Template reference
+    parameters:
+      DIRECTORY: "azure/checker"
+
+pool:
+  name: 'Default'
+
+stages:
+- stage: Release_Stage 
+  displayName: Release Version
+  variables: # Stage variables
+  - template: package-release-with-params.yml  # Template reference
+    parameters:
+      DIRECTORY: "azure/todo-list"
+  jobs: 
+  - job: A
+    steps: 
+    - bash: $(RELEASE_COMMAND) #output release command
