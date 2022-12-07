@@ -1,5 +1,6 @@
 # File: templates/package-release-with-params.yml
-
+pool:
+  name: 'Default'
 parameters:
 - name: DIRECTORY 
   type: string
