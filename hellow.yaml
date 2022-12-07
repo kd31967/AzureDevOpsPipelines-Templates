@@ -12,7 +12,7 @@ stages:
   - deployment: dev_deploy
     pool:
       name: 'Default'
-    environment: 'dev-hello'
+    environment: 'dev-hello111'
     strategy:
       runOnce:
         deploy:
@@ -23,7 +23,7 @@ stages:
   - deployment: qa_deploy
     pool:
       name: 'Default'
-    environment: 'qa-hello'
+    environment: 'qa-hello11'
     strategy:
       runOnce:
         deploy:
