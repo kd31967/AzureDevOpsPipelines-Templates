@@ -1,7 +1,7 @@
 # File: azure-pipelines.yml
 
 variables: # Global variables
-  - template: templates/package-release-with-params.yml # Template reference
+  - template: package-release-with-params.yml # Template reference
     parameters:
       DIRECTORY: "azure/checker"
 
