@@ -4,6 +4,7 @@ variables: # Global variables
   - template: package-release-with-params.yml # Template reference
     parameters:
       DIRECTORY: "azure/checker"
+      ABC: "DEVENDRA"
 
 pool:
   name: 'Default'
@@ -19,3 +20,7 @@ stages:
   - job: A
     steps: 
     - bash: $(RELEASE_COMMAND) #output release command
+  - job: B
+    steps: 
+    - bash: $(RELEASE_COMMAND) #output release command
+
